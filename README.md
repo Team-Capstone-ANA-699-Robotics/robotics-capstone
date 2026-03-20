@@ -23,7 +23,7 @@
 ---
 
 *Can a robot learn to move — not from trial and error — but from studying the past?*  
-*This project explores that question.*
+*This project explores that question — three ways.*
 
 ---
 
@@ -33,7 +33,7 @@
 
 This capstone project investigates **offline reinforcement learning** for robotic locomotion and manipulation tasks using **Decision Transformers** — a sequence modeling approach that reframes RL as a conditional sequence prediction problem.
 
-Rather than learning from live environment interaction, our agent learns from **pre-collected datasets** (D4RL / Minari), treating trajectories as language-like sequences and leveraging transformer architectures to generate goal-conditioned behavior.
+Each team member independently trains and tunes their own model variant, with results compared in a shared evaluation framework. Rather than learning from live environment interaction, our agents learn from **pre-collected datasets** (D4RL / Minari), treating trajectories as language-like sequences and leveraging transformer architectures to generate goal-conditioned behavior.
 
 ---
 
@@ -54,31 +54,76 @@ Rather than learning from live environment interaction, our agent learns from **
 ```
 robotics-capstone/
 │
-├── 📁 data/                  # Dataset loading and preprocessing
+├── 📁 data/                        # Shared dataset loading & preprocessing
 │   ├── loader.py
-│   └── preprocessing.py
+│   ├── preprocessing.py
+│   └── __init__.py
 │
-├── 📁 models/                # Model architecture
-│   ├── decision_transformer.py
-│   └── gpt2_backbone.py
+├── 📁 models/                      # Shared base model architecture
+│   ├── base_transformer.py
+│   └── __init__.py
 │
-├── 📁 training/              # Training loops and configs
-│   ├── trainer.py
-│   └── config.py
+├── 📁 experiments/                 # Individual model experiments
+│   │
+│   ├── 📁 daniel/                  # Daniel's experiment space
+│   │   ├── models/model.py         # Daniel's model variant
+│   │   ├── configs/params.json     # Hyperparameters & settings
+│   │   ├── results/                # Daniel's output & metrics
+│   │   └── README.md               # Notes on Daniel's approach
+│   │
+│   ├── 📁 darwin/                  # Darwin's experiment space
+│   │   ├── models/model.py
+│   │   ├── configs/params.json
+│   │   ├── results/
+│   │   └── README.md
+│   │
+│   └── 📁 dave/                    # Dave's experiment space
+│       ├── models/model.py
+│       ├── configs/params.json
+│       ├── results/
+│       └── README.md
 │
-├── 📁 evaluation/            # Evaluation and metrics
+├── 📁 evaluation/                  # Shared evaluation framework
 │   ├── evaluate.py
-│   └── metrics.py
+│   ├── metrics.py
+│   └── __init__.py
 │
-├── 📁 notebooks/             # Exploratory analysis & demos
+├── 📁 comparison/                  # Cross-model result comparison
+│   ├── compare_results.py
+│   └── visualize.py
+│
+├── 📁 notebooks/                   # Demos & exploratory analysis
 │   └── demo.ipynb
 │
-├── 📁 results/               # Saved checkpoints and plots
+├── 📁 docs/                        # Project notes & documentation
+│   └── notes.md
 │
 ├── requirements.txt
 ├── .gitignore
 └── README.md
 ```
+
+---
+
+## 🔀 Branching Strategy
+
+Each team member works on their own branch and opens a Pull Request to merge into `main`:
+
+```
+main              ← stable, reviewed code only
+daniel/model      ← Daniel's experiments
+darwin/model      ← Darwin's experiments
+dave/model        ← Dave's experiments
+```
+
+**Ground Rules:**
+- ❌ Never commit directly to `main`
+- ✅ Always work on your personal branch
+- ✅ Open a Pull Request when merging to `main`
+- ✅ At least one teammate must review before merging
+- ✅ Document your hyperparameters in `configs/params.json`
+- ✅ Save all outputs to your own `results/` folder
+- ✅ Discuss changes to shared files before committing
 
 ---
 
@@ -110,11 +155,14 @@ Follow the official MuJoCo installation guide: [mujoco.org](https://mujoco.org)
 ## 🚀 Usage
 
 ```bash
-# Train the Decision Transformer
-python training/trainer.py --env hopper-medium-v2 --epochs 10
+# Train your model (run from your experiments folder)
+python experiments/daniel/models/model.py --config experiments/daniel/configs/params.json
 
 # Evaluate a trained model
-python evaluation/evaluate.py --checkpoint results/checkpoint.pt
+python evaluation/evaluate.py --checkpoint experiments/daniel/results/checkpoint.pt
+
+# Compare all three models
+python comparison/compare_results.py
 
 # Run the demo notebook
 jupyter notebook notebooks/demo.ipynb
@@ -122,13 +170,25 @@ jupyter notebook notebooks/demo.ipynb
 
 ---
 
+## 📊 Experiment Comparison
+
+| Team Member | Model Variant | Key Hyperparameters | Best Score |
+|---|---|---|---|
+| Daniel Kast | TBD | TBD | TBD |
+| Darwin Juan | TBD | TBD | TBD |
+| Dave Terando | TBD | TBD | TBD |
+
+*This table will be updated as experiments are completed.*
+
+---
+
 ## 👥 Team
 
 | Name | Role | GitHub |
 |---|---|---|
-| Darwin Juan | Co Lead | — |
-| Daniel Kast | Co Lead | [@Daniel-Kast](https://github.com/Daniel-Kast) |
-| Dave Terando | Co Lead | — |
+| Daniel Kast | Co-Lead | [@Daniel-Kast](https://github.com/Daniel-Kast) |
+| Darwin Juan | Co-Lead | — |
+| Dave Terando | Co-Lead | — |
 
 ---
 
