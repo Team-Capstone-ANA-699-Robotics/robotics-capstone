@@ -126,8 +126,8 @@ jupyter notebook notebooks/demo.ipynb
 
 | Name | Role | GitHub |
 |---|---|---|
-| Daniel Kast | Co Lead | [@Daniel-Kast](https://github.com/Daniel-Kast) |
 | Darwin Juan | Co Lead | — |
+| Daniel Kast | Co Lead | [@Daniel-Kast](https://github.com/Daniel-Kast) |
 | Dave Terando | Co Lead | — |
 
 ---
