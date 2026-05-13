@@ -214,4 +214,3 @@ experiments/daniel/data/
 experiments/daniel/checkpoints/dt_full_iter*.pt
 experiments/daniel/results/best_model*.pt
 experiments/daniel/results/*_backup*
-experiments/daniel/results/videos_M1-iMac/
