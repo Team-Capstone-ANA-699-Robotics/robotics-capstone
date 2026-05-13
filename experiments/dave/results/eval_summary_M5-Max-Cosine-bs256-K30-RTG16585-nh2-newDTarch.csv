@@ -1,0 +1,2 @@
+hardware,mujoco_env,target_rtg,n_episodes,mean_raw_return,std_raw_return,mean_norm_return,std_norm_return,mean_success_gap,min_raw_return,max_raw_return,train_iters
+M5-Max-Cosine-bs256-K30-RTG16585-nh2-newDTarch,HalfCheetah-v4,16585.0,50,17017.99,44.85,139.33,0.36,-432.99,16885.03,17084.48,100000

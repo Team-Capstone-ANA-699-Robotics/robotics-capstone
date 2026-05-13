@@ -1,0 +1,12 @@
+metric,value
+Final train loss,0.055296
+Final val   loss,0.063055
+Final gap (val − train),+0.007759
+Final ratio (val / train),1.140
+Best train loss,0.055022
+Best train iteration,"92,500"
+Best val   loss,0.061725
+Best val   iteration,"60,000"
+Val mid-run loss,0.062535
+Val late-run min,0.061725
+Val rebound (final − late_min),+0.001330
