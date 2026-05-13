@@ -163,11 +163,11 @@ The capstone paper is in final preparation. Chapter drafts are available in `doc
 
 | Chapter | Status |
 |---|---|
-| Chapter 1 — Introduction | Complete |
-| Chapter 2 — Literature Review | Complete |
-| Chapter 3 — Methodology | Complete |
-| Chapter 4 — Results | Complete (tables/figures in progress) |
-| Chapter 5 — Discussion | Complete (tables/figures in progress) |
+| Chapter 1 — Introduction | Complete (draft) |
+| Chapter 2 — Literature Review | Complete (draft) |
+| Chapter 3 — Methodology | Complete (tables/figures in progress) (draft) |
+| Chapter 4 — Results | Complete (draft) |
+| Chapter 5 — Discussion | Complete (draft) |
 
 The full compiled paper will be posted to `docs/` upon final submission.
 
