@@ -1,0 +1,6 @@
+hardware,iteration,wall_clock_s,batches_per_second,mean_loss,mean_grad_norm,cpu_percent,ram_used_gb,gpu_mem_gb
+M1-iMac_quickval,100,7.76,14.088,0.569583,5.4397,15.5,4.13,0.213
+M1-iMac_quickval,200,11.22,33.924,0.539702,3.7327,13.7,4.11,0.213
+M1-iMac_quickval,300,14.68,33.851,0.483648,3.3126,15.1,4.17,0.213
+M1-iMac_quickval,400,18.23,32.762,0.406608,2.7121,17.5,4.19,0.213
+M1-iMac_quickval,500,21.73,33.403,0.321045,1.8998,15.9,4.14,0.213

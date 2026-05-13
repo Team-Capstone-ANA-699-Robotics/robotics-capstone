@@ -1,0 +1,2 @@
+hardware,mujoco_env,target_rtg,n_episodes,mean_raw_return,std_raw_return,mean_norm_return,std_norm_return,mean_success_gap,min_raw_return,max_raw_return,train_iters
+M1-iMac,HalfCheetah-v4,16585.0,50,16984.83,119.12,139.06,0.96,-399.83,16419.01,17085.66,100000
