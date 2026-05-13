@@ -1,0 +1,17 @@
+,D4RL medium-expert-v2,Minari halfcheetah-medium-v0,Minari halfcheetah-expert-v0,Minari Combined (med + exp)
+Timesteps,"2,000,000","1,000,000","1,000,000","2,000,000"
+Episodes,"2,000","1,000","1,000","2,000"
+Obs Dim,17,17,17,17
+Action Dim,6,6,6,6
+Mean Episode Return,7713,12089,16243,14166
+Median Norm. Return,44.5,109.4,134.4,115.3
+Mean Norm. Return,64.4,99.6,133.1,116.4
+Std Norm. Return,23.9,24.2,8.2,24.6
+Max Episode Return,11252,14239,16585,16585
+Mean Episode Length,1000,1000,1000,1000
+Std Episode Length,0,0,0,0
+% Early Termination,0.0%,0.0%,0.0%,0.0%
+Mean Per-Step Reward,7.713,12.089,16.243,14.166
+Std Per-Step Reward,3.420,4.697,3.507,4.636
+Action Saturation Rate,27.5%,27.4%,21.5%,24.5%
+Max RTG (DT target),11252,14239,16585,16585

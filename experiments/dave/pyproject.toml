@@ -1,0 +1,10 @@
+[project]
+name = "dt-capstone"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "imageio>=2.37.3",
+    "imageio-ffmpeg>=0.6.0",
+]

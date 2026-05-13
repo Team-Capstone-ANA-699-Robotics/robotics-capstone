@@ -1,0 +1,8 @@
+Platform,Mean BPS,Max BPS,Final Loss,Mean RAM (GB),Total Time (h)
+M5 Max Standard,108.15,109.80,0.068398,41.0,0.33
+M5 Max SampleVol,71.21,71.63,0.064738,31.8,0.57
+M5 Max Optimized,49.19,50.37,0.063473,41.3,0.75
+M5 Max newDTarch Baseline,137.87,141.64,0.058288,22.3,0.26
+M5 Max newDTarch Optimized,49.43,51.15,0.055841,48.3,0.75
+M1 iMac,33.86,34.90,0.058289,4.1,0.96
+Cloud GPU,144.42,144.95,0.055825,4.8,0.42

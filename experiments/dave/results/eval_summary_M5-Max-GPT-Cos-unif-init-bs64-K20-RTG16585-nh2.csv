@@ -1,0 +1,2 @@
+hardware,mujoco_env,target_rtg,n_episodes,mean_raw_return,std_raw_return,mean_norm_return,std_norm_return,mean_success_gap,min_raw_return,max_raw_return,train_iters
+M5-Max-GPT-Cos-unif-init-bs64-K20-RTG16585-nh2,HalfCheetah-v4,16585.0,50,3921.42,2164.69,33.84,17.44,12663.58,828.87,8705.53,100000
