@@ -132,28 +132,6 @@ The notebooks combine these two sub-splits at load time to replicate the D4RL `h
 
 > **Note on d4rl:** The `d4rl` package does not install on Apple Silicon due to a `pybullet` arm64 compilation failure. This project uses Minari throughout. The EDA notebook loads D4RL via HDF5 fallback for comparison purposes only.
 
----
-
-## Checkpoints
-
-Trained model weights are stored in `checkpoints/`. Each `.pt` file contains the model state dictionary, optimizer state, training configuration, iteration counter, and embedded state normalization statistics (`state_mean`, `state_std`).
-
-| File | Corresponds To |
-|---|---|
-| `Darwin_DT_ColabCloudG4Cloud_Cosine_K30_bs256_RTG16585_nh2.ipynb` | `training_handcoded_K30_bs256_primary.ipynb` |
-| `Darwin_DT_ColabCloudG4Cloud_Cosine_K20_bs64_RTG16585_nh2.ipynb` | `training_handcoded_K20_bs64.ipynb` |
-| `checkpoints_valdiag/dt_valdiag_final.pt` | `validation_diagnostic.ipynb` |
-
-To load a checkpoint for evaluation:
-
-```python
-import torch
-ckpt = torch.load("checkpoints/dt_full_final_M5-Max-Cosine-bs256-K30-RTG16585-nh2-newDTarch.pt",
-                  map_location="cpu")
-model.load_state_dict(ckpt["model_state_dict"])
-state_mean = ckpt["state_mean"]
-state_std  = ckpt["state_std"]
-```
 
 ---
 
