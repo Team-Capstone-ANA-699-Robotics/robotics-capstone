@@ -140,8 +140,8 @@ Trained model weights are stored in `checkpoints/`. Each `.pt` file contains the
 
 | File | Corresponds To |
 |---|---|
-| `dt_full_final_M5-Max-Cosine-bs256-K30-RTG16585-nh2-newDTarch.pt` | `training_handcoded_K30_bs256_primary.ipynb` |
-| `dt_full_final_M5-Max-Cosine-bs64-K20-RTG16585-nh2-newDTarch.pt` | `training_handcoded_K20_bs64.ipynb` |
+| `Darwin_DT_ColabCloudG4Cloud_Cosine_K30_bs256_RTG16585_nh2.ipynb` | `training_handcoded_K30_bs256_primary.ipynb` |
+| `Darwin_DT_ColabCloudG4Cloud_Cosine_K20_bs64_RTG16585_nh2.ipynb` | `training_handcoded_K20_bs64.ipynb` |
 | `checkpoints_valdiag/dt_valdiag_final.pt` | `validation_diagnostic.ipynb` |
 
 To load a checkpoint for evaluation:
