@@ -159,16 +159,6 @@ state_std  = ckpt["state_std"]
 
 ## Paper
 
-The capstone paper is in final preparation. Chapter drafts are available in `docs/chapters/`.
-
-| Chapter | Status |
-|---|---|
-| Chapter 1 — Introduction | Complete (draft) |
-| Chapter 2 — Literature Review | Complete (draft) |
-| Chapter 3 — Methodology | Complete (tables/figures in progress) (draft) |
-| Chapter 4 — Results | Complete (draft) |
-| Chapter 5 — Discussion | Complete (draft) |
-
 The full compiled paper will be posted to `docs/` upon final submission.
 
 ---
