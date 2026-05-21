@@ -71,7 +71,7 @@ All three platforms trained the same hand-coded Decision Transformer architectur
 | Team Member | Hardware | K | Batch Size | n_heads | LR Schedule | D4RL Norm. Score | Training Time | BPS |
 |---|---|---|---|---|---|---|---|---|
 | Daniel Kast | M1 iMac (8.6 GB) | 20 | 64 | 2 | Cosine | **139.1 ± 1.0** | ~58 min | ~33.9 |
-| Darwin Juan | NVIDIA RTX 6000 Pro (Colab) | 30 | 64 | 1 | Cosine | **82.4 ± 30.7** | ~25 min | ~144.4 |
+| Darwin Juan | NVIDIA RTX 6000 Pro (Colab) | 30 | 256 | 2 | Cosine | **139.3 ± 2.28** | ~25 min | ~144.4 |
 | Dave Terando | M5 Max (128 GB) | 30 | 256 | 2 | Cosine | **139.3 ± 0.4** | ~45 min | ~49.4 |
 
 **Chen et al. (2021) HalfCheetah Medium-Expert benchmark: ~86.8**
